@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardviewitem"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:backgroundTint="#F9A825"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelname"
+            android:text="Tên:"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTenNguoiChoi"
+            android:text="Vũ Trí Tùng"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="21sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/labelname"/>
+
+        <!--Style Giá-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/labelgia"
+            android:text="Tiền:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_below="@id/tvTenNguoiChoi"/>
+
+        <TextView
+            android:id="@+id/tvTien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTenNguoiChoi"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/labelgia"
+            android:text="100 VND"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
